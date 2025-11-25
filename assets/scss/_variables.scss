@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #0b84ff; /* main blue used for avatar/button */
+    --color-primary-600: #0a74e6;
+    --color-primary-100: #eaf5ff;
+
+    --color-bg: #f4fbff; /* very light blue page background */
+    --color-surface: #ffffff; /* cards, header background */
+
+    --color-text: #1f2d3d; /* dark heading */
+    --color-text-muted: #6b7a88; /* secondary/muted text */
+
+    --color-border: rgba(9, 30, 66, 0.04);
+    --color-shadow: rgba(14, 74, 124, 0.03);
+
+    --color-accent: #e6f3ff; /* light accent / icon circle */
+
+    --body-bg: #fcfbf8;
+
+    // fonts 
+
+    --font-xs: 0.75rem;  // 12px
+    --font-sm: 0.875rem; // 14px
+    --font-md: 1rem;     // 16px
+    --font-lg: 1.125rem; // 18px
+    --font-xl: 1.25rem;  // 20px
+    --font-2xl: 1.5rem;  // 24px
+    --font-3xl: 1.875rem;// 30px
+
+}

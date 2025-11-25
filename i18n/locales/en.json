@@ -1,0 +1,55 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "EN"
+  },
+  "hero": {
+    "title": "We Innovate Apps That Grow With You",
+    "subtitle": "We are a tech company specialized in developing innovative digital solutions for companies, government entities, and individuals",
+    "button": "Get a Quote"
+  },
+  "stats": {
+    "experience": "+8 Years of Experience",
+    "clients": "+120 Satisfied Clients",
+    "projects": "+150 Completed Projects"
+  },
+
+  "services": "Our Services",
+  "services_description": "We offer a range of technical services to meet your business needs",
+  "web_development": "Web Development",
+  "web_development_desc": "We develop professional web applications for the best user experience",
+  "mobile_apps": "Mobile App Development",
+  "mobile_apps_desc": "We design and develop high-quality iOS and Android apps",
+  "ui_ux": "UI/UX Design",
+  "ui_ux_desc": "Designing attractive and user-friendly interfaces to enhance user experience",
+  "cloud_solutions": "Cloud Solutions",
+  "cloud_solutions_desc": "Efficient cloud solutions to store and manage your data securely",
+  
+  "projects": "Our Projects",
+  "projects_description": "Check out some of our featured projects",
+  "project1_title": "Project Management App",
+  "project1_desc": "A comprehensive app to manage projects and track all stages of work",
+  "project2_title": "E-commerce Platform",
+  "project2_desc": "A full-featured e-commerce platform to sell products and services",
+  "project3_title": "Smart Scheduling App",
+  "project3_desc": "A complete solution to create schedules and track appointments",
+  "project4_title": "Content Management System",
+  "project4_desc": "A comprehensive CMS to manage digital content easily",
+
+  "contact_us": "Contact Us",
+  "contact_us_desc": "We are here to answer your inquiries and help you achieve your digital goals",
+  "whatsapp": "WhatsApp",
+  "phone": "Phone",
+  "email": "Email",
+  
+  "footer_company": "Company Name",
+  "footer_desc": "We provide innovative software solutions to grow businesses and improve user experience",
+  "footer_links": "Get in Touch",
+  "footer_home": "Home",
+  "footer_services": "Services",
+  "footer_projects": "Projects",
+  "footer_contact": "Contact Us"
+}
