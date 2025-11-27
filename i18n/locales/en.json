@@ -9,12 +9,12 @@
   "hero": {
     "title": "We Innovate Apps That Grow With You",
     "subtitle": "We are a tech company specialized in developing innovative digital solutions for companies, government entities, and individuals",
-    "button": "Get a Quote"
+    "get_quote": "Get a Quote"
   },
   "stats": {
-    "experience": "+8 Years of Experience",
-    "clients": "+120 Satisfied Clients",
-    "projects": "+150 Completed Projects"
+    "experience": "Years of Experience",
+    "clients": "Satisfied Clients",
+    "projects": "Completed Projects"
   },
 
   "services": "Our Services",

@@ -1,0 +1,28 @@
+button {
+    padding: 0 1.5rem;
+    font-size: var(--font-md);
+    font-weight: 600;
+    color: #fff;
+    background: var(--color-primary);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px var(--color-shadow);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.4,0,.2,1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background: var(--color-primary-dark);
+        box-shadow:  0 0 #0000,0 0 #0000;
+        transform: scale(1.1);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px var(--color-accent);
+    }
+    &.lg {
+        height: 2.75rem;
+    }
+}
