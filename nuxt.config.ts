@@ -18,8 +18,8 @@ export default defineNuxtConfig({
     // locales: ['ar', 'en'],
     defaultLocale: 'ar',
     strategy: 'prefix_except_default',
-    langDir: 'locales',
     lazy: true,
+    langDir: 'locales',
     locales: [
       { code: 'ar', name: 'Arabic', file: 'ar.json' },
       { code: 'en', name: 'English', file: 'en.json' }

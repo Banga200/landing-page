@@ -37,12 +37,14 @@ a {
 .mt-1 { margin-top: 0.25rem; }
 .mt-2 { margin-top: 0.5rem; }
 .mt-3 { margin-top: 1rem; }
+.mt-6 { margin-top: 2.5rem; }
 .mb-1 { margin-bottom: 0.25rem; }
 .mb-2 { margin-bottom: 0.5rem; }
 .mb-3 { margin-bottom: 1rem; }
 .mb-4 { margin-bottom: 1.5rem; }
 .mb-5 { margin-bottom: 2rem; }
 .mb-6 { margin-bottom: 2.5rem; }
+.mb-16 { margin-bottom: 4rem; }
 .mx-1 { margin-inline: 0.25rem; }
 .mx-2 { margin-inline: 0.5rem; }
 .mx-3 { margin-inline: 1rem; }
@@ -58,9 +60,11 @@ a {
 .px-1 { padding-inline: 0.25rem; }
 .px-2 { padding-inline: 0.5rem; }
 .px-3 { padding-inline: 1rem; }
+.px-4 { padding-inline: 1.5rem; }
 .pt-20 { padding-top: 5rem; }
 .pb-20 { padding-bottom: 5rem; }
 
+.p-4 { padding: 1.5rem; }
 // ==== Gaps Utilities ====
 .gap-0 { gap: 0; }
 .gap-1 { gap: 0.25rem; }   // 4px
@@ -92,6 +96,13 @@ a {
     justify-content: center;
     align-items: center;
 }
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -116,6 +127,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 nav ul {
     list-style: none;
@@ -155,7 +167,7 @@ section {
     transition: all 0.3s ease;
     &:hover {
         box-shadow: var(--color-shadow);
-        transform: scale(1.05);
+        transform: scale(1.03);
         transition: all 0.3s cubic-bezier(.4,0,.2,1);
         &.colored {
             border-color: var(--color-primary-100);
@@ -178,4 +190,33 @@ section {
     &.rectangle {
         border-radius: 0.75rem;
     }
+}
+.chip{
+    display: inline-block;
+    padding-block: .25rem;
+    padding-inline: .75rem;
+    border-radius: 9999px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.project_image {
+    height: 16rem;
+    overflow: hidden;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s cubic-bezier(.4,0,.2,1);
+
+    }
+    &.hover img{
+        transform: scale(1.1);
+    }
+}
+.projet_content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }

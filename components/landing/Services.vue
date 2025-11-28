@@ -5,7 +5,7 @@ const services: ServiceItem[] = getServices();
 <template>
     <section class="bg-light-gray">
         <div class="container">
-            <div class="text-center mb-6">
+            <div class="text-center mb-16">
                 <h2 class="text-5xl">{{ $t('services') }}</h2>
                 <p>{{ $t('services_description') }}</p>
             </div>

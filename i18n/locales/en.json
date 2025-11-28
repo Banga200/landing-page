@@ -51,5 +51,8 @@
   "footer_home": "Home",
   "footer_services": "Services",
   "footer_projects": "Projects",
-  "footer_contact": "Contact Us"
+  "footer_contact": "Contact Us",
+
+  "view_details": "View Details"
+  
 }

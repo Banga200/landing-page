@@ -12,6 +12,12 @@ export interface ServiceItem {
   subTitle: string;
   icon: string;
 }
+export interface ProjectItem {
+  imageUrl?: string;
+  title: string;
+  description: string;
+  techs: string[];
+}
 
 export interface ContactItem extends ServiceItem {}
 // Export a function that returns the stats array
@@ -61,4 +67,56 @@ export const getContacts = (): ContactItem[] => {
   ];
 
   return contacts;
+};
+export const getProjects = (): ProjectItem[] => {
+  const { t } = useI18n();
+
+  const projects: ProjectItem[] = [
+    {
+      imageUrl: "/images/project1.jpg",
+      title: t("project1_title"),
+      description: t("project1_desc"),
+      techs:  [
+        "React Native",
+        "Firebase",
+        "Redux",
+        "TypeScript"
+      ] // your icon name
+    },
+    {
+      imageUrl: "/images/project2.jpg",
+      title: t("project2_title"),
+      description: t("project2_desc"),
+      techs: [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe"
+      ]
+    },
+    {
+      imageUrl: "/images/project3.jpg",
+      title: t("project3_title"),
+      description: t("project3_desc"),
+      techs: [
+        "Vue.js",
+        "Express",
+        "MySQL",
+        "Socket.io"
+      ],
+    },
+    {
+      imageUrl: "/images/project4.jpg",
+      title: t("project4_title"),
+      description: t("project4_desc"),
+      techs: [
+      "Next.js",
+      "TailwindCSS",
+      "Prisma",
+      "MongoDB"
+],
+    },
+  ];
+
+  return projects;
 };

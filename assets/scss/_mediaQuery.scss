@@ -3,6 +3,7 @@
 
 /* sm ≥ 576px */
 @media (min-width: 576px) {
+  .sm-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
   .sm-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
   .sm-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
 }
@@ -16,6 +17,7 @@
 
 /* lg ≥ 992px */
 @media (min-width: 992px) {
+  .lg-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
   .lg-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
   .lg-grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
 }
@@ -51,8 +53,8 @@
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1430px) {
   .container {
-    max-width: 1536px; /* 2xl */
+    max-width: 1430px; /* 2xl */
   }
 }

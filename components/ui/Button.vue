@@ -18,17 +18,20 @@ const props = defineProps({
         type: String,
         required: false,
         default: 'md' // sm, md, lg
+    },
+    variant: {
+        type: String,
+        required: false,
+        default: 'primary' // primary, secondary, tertiary
     }
 });
 </script>
 <template>
-    <button :class="size">
+    <button :class="[size, variant]">
         <div class="icon">
             <component :is="preappendIcon" v-if="preappendIcon" />
         </div>
         <span><slot /></span>
-        <div class="icon">
-            <component :is="appendIcon" v-if="appendIcon" />
-        </div>
+        <component :is="appendIcon" v-if="appendIcon" />
     </button>
 </template>
