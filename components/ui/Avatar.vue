@@ -11,12 +11,16 @@ const props = defineProps({
     color: {
         type: String,
         default: 'primary'
+    },
+    hover: {
+        type: Boolean,
+        default: false
     }
 });
 </script>
 
 <template>
-    <div :class="['avatar', { 'rectangle': rectangle }, color]">
+    <div :class="['avatar', { 'rectangle': rectangle }, color, hover]">
         <component :is="icon" v-if="icon" />
     </div>
 </template>

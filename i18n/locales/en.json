@@ -1,4 +1,5 @@
 {
+  "company_name": "Company Name",
   "header": {
     "home": "Home",
     "services": "Services",
@@ -31,13 +32,20 @@
   "projects": "Our Projects",
   "projects_description": "Check out some of our featured projects",
   "project1_title": "Project Management App",
-  "project1_desc": "A comprehensive app to manage projects and track all stages of work",
-  "project2_title": "E-commerce Platform",
-  "project2_desc": "A full-featured e-commerce platform to sell products and services",
-  "project3_title": "Smart Scheduling App",
-  "project3_desc": "A complete solution to create schedules and track appointments",
+  "project1_subtitle": "A complete application for managing projects and tracking all workflow stages",
+  "project1_desc": "A comprehensive e-commerce platform that enables businesses to manage their products and orders with high efficiency. It includes a secure payment system, inventory management, and advanced analytical reports to support informed decision-making.",
+
+  "project2_title": "E-Commerce Platform",
+  "project2_subtitle": "A fully integrated platform for selling products and services",
+  "project2_desc": "A full project-management application that helps teams collaborate effectively. It includes task management, calendar, Kanban boards, and real-time communication tools. Ideal for companies seeking an all-in-one project solution.",
+
+  "project3_title": "Smart Schedule App",
+  "project3_subtitle": "An integrated solution for creating schedules and tracking appointments",
+  "project3_desc": "A powerful and flexible content-management system that enables easy creation, editing, and publishing of digital content. Designed for simplicity with advanced features for permissions and scheduled publishing.",
+
   "project4_title": "Content Management System",
-  "project4_desc": "A comprehensive CMS to manage digital content easily",
+  "project4_subtitle": "A full CMS for managing digital content with ease",
+  "project4_desc": "An intelligent booking-management application that streamlines appointment and reservation handling. It includes automated notifications, calendar integration, and effective customer management.",
 
   "contact_us": "Contact Us",
   "contact_us_desc": "We are here to answer your inquiries and help you achieve your digital goals",
@@ -53,6 +61,21 @@
   "footer_projects": "Projects",
   "footer_contact": "Contact Us",
 
-  "view_details": "View Details"
+  "monthly_book": "Monthly Book",
+  "satisfaction_rate": "Satisfaction Rate",
+  "development_months": "Development Months",
+  "editor": "Editor",
+  "content_page": "Content Page",
+  "team": "Team",
+  "active_project": "Active Project",
+  "active_user": "Active User",
+  "daily_opretion": "Daily Operation",
+
+  "overview": "Overview",
+  "technologies_used": "Technologies Used",
+
+  "view_details": "View Details",
+  "back_to_projects": "Back to Projects"
+  
   
 }

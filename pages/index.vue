@@ -4,4 +4,5 @@
    <Services/>
    <Projects/>
    <Contact/>
+   <Footer/>
 </template>

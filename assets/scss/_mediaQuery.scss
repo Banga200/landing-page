@@ -39,6 +39,7 @@
   .container {
     max-width: 768px;  /* md */
   }
+
 }
 
 @media (min-width: 1024px) {
@@ -56,5 +57,11 @@
 @media (min-width: 1430px) {
   .container {
     max-width: 1430px; /* 2xl */
+  }
+}
+
+@media (max-width: 1024px) {
+  .navs {
+    display: none;
   }
 }

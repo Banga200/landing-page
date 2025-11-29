@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     locales: [
       { code: 'ar', name: 'Arabic', file: 'ar.json' },
       { code: 'en', name: 'English', file: 'en.json' }
-    ]
+    ],
   },
   css: ["~/assets/scss/global.scss"],
   devtools: { enabled: true }

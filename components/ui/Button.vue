@@ -17,21 +17,22 @@ const props = defineProps({
     size: {
         type: String,
         required: false,
-        default: 'md' // sm, md, lg
     },
     variant: {
         type: String,
         required: false,
         default: 'primary' // primary, secondary, tertiary
+    },
+    onlyIcon: {
+        type: Boolean
     }
 });
 </script>
 <template>
-    <button :class="[size, variant]">
-        <div class="icon">
-            <component :is="preappendIcon" v-if="preappendIcon" />
-        </div>
-        <span><slot /></span>
+    <button :class="[size, variant, onlyIcon]">
+        <component :is="preappendIcon" v-if="preappendIcon" />
+        <span v-if="text"></span>
+        <slot />
         <component :is="appendIcon" v-if="appendIcon" />
     </button>
 </template>

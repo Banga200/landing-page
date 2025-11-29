@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'Cairo', 'Inter', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -18,10 +21,23 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
 }
 .grid {
     display: grid;
     gap: 1rem;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.h-96 {
+    height: 24rem;
 }
 .text-xs { font-size: var(--font-xs); }
 .text-sm { font-size: var(--font-sm); }
@@ -99,6 +115,10 @@ a {
 .d-flex {
     display: flex;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -128,8 +148,39 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    &.scrolled {
+        background-color: hsl(0 0% 100% / 0.95);
+        box-shadow: var(--color-shadow);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
 }
-nav ul {
+nav {
+    &.mobile-navs {
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+        min-height: 300px;
+        z-index: 999;
+        background-color: var(--color-accent);
+        ul {
+            flex-direction: column;
+            justify-content: space-around;
+            gap: .5rem;
+            li {width: 100%;}
+            a {display: block;
+                 padding-inline: 1rem;
+                 padding-block: .75rem;
+                  width: inherit;
+                }
+            a:hover {
+                background-color: var(--color-accent);
+                a {color: var(--color-primary);}
+                transition: all .3 ease;
+            }
+        }
+    }
+    ul {
     list-style: none;
     @extend .flex-between;
     gap: 1.5rem;
@@ -139,13 +190,14 @@ nav ul {
     }
     
 }
+}
 section {
     @extend .pt-20;
     @extend .pb-20;
 }
 #home {
     @extend.pt-20;
-    height: 100vh;
+    min-height: 100vh;
     @extend .center-horz-vert;
     background: var(--color-hero-bg);
     .hero {
@@ -186,7 +238,7 @@ section {
     border-radius: 50%;
     background: var(--color-accent);
     color: var(--color-primary);
-
+    transition: all 0.3s ease;
     &.rectangle {
         border-radius: 0.75rem;
     }
@@ -198,6 +250,17 @@ section {
     border-radius: 9999px;
     background-color: var(--color-accent);
     color: var(--color-primary);
+    &.rectangle {
+        padding-block: .5rem;
+        padding-inline: 1rem;
+        border-radius: .75rem;
+        transition: all .3s ease;
+        &:hover {
+            background-color: var(--color-primary);
+            color: white;
+
+        }
+    }
 }
 
 .project_image {
@@ -219,4 +282,74 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+}
+footer {
+    padding-block: 3rem;
+    padding-inline: 1rem;
+    background-color: var(--card);
+    border-top: 1px solid var(--color-border);
+    .links {
+        a{
+            color: var(--color-text-muted);
+            &:hover{
+                color: var(--color-primary);
+            }
+        }
+    }
+    a {
+        .avatar {
+            background-color: var(--color-accent);
+            color: inherit;
+            &:hover {
+                background-color: var(--color-primary);
+                color: white;
+            }
+        }
+    }
+}
+
+.float-button {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: var(--color-success);
+    color: white;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(1.1);
+        background-color: var(--color-success-dark);
+    }
+    svg{
+        flex-shrink: 0;
+    }
+}
+
+
+
+/* Slide from left */
+.slide-enter-active, .slide-leave-active {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.slide-enter-from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.slide-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-leave-to {
+  transform: translateX(-100%);
+  opacity: 0;
 }
