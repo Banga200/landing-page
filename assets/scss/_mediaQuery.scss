@@ -46,6 +46,9 @@
   .container {
     max-width: 1024px; /* lg */
   }
+  .isMobile {
+    display: none;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -64,4 +67,5 @@
   .navs {
     display: none;
   }
+  
 }

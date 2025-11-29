@@ -47,7 +47,7 @@ const toggleNav = () => {
                     <Button variant="text" size="md" preappend-icon="languages" @click="changeLang">
                         {{ $t('header.language') }}
                     </Button>
-                    <Button variant="text" size="md" preappend-icon="menu" :onlyIcon="true" @click.stop="toggleNav"></Button>
+                    <Button variant="text" size="md" preappend-icon="menu" class="isMobile" :onlyIcon="true" @click.stop="toggleNav"></Button>
                 </div>
             </ClientOnly>
         </div>
