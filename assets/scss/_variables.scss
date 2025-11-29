@@ -1,4 +1,11 @@
 :root {
+     --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
     --color-primary: #007fff; /* main blue used for avatar/button */
     --color-primary-dark: #0066cc;
     --color-primary-600: #0a74e6;
@@ -14,7 +21,7 @@
 
     --color-text: #1f2d3d; /* dark heading */
     --color-text-muted: #65758b; /* secondary/muted text */
-
+    --color-bold-font: #344256;
     --color-border: #e0e5eb;
     --color-shadow: 0 10px 40px -10px hsl(210 100% 50% / .15);
 
