@@ -69,3 +69,13 @@
   }
   
 }
+
+
+/* small devices */
+@media (max-width: 640px) {
+  .text-2xl { font-size: calc(var(--font-2xl) * .75) !important; }
+  .text-3xl { font-size: calc(var(--font-3xl) * .75) !important; }
+  .text-4xl { font-size: calc(var(--font-4xl) * .75) !important; }
+  .text-5xl { font-size: calc(var(--font-5xl) * .75) !important; }
+  .text-6xl { font-size: calc(var(--font-6xl) * .75) !important; }
+}
